@@ -3,6 +3,8 @@ import axios from 'axios'
 import Search from './components/Search';
 import Table from './components/Table';
 import Pagination from './components/Pagination'
+import Sort from './components/Sort'
+ 
 import './App.css';
 
 const base_url = process.env.REACT_APP_API_URL;
@@ -43,7 +45,7 @@ function App() {
                 page = {page}
                 limit = {obj.limit ? obj.limit : 0}
                 total = {obj.total ? obj.total : 0}
-                setPage = { (page) => setPage(page)}
+                setPage = {(page) => setPage(page)}
               />
             </div>
             <div className="filter_container"></div>
