@@ -48,7 +48,9 @@ function App() {
                 setPage = {(page) => setPage(page)}
               />
             </div>
-            <div className="filter_container"></div>
+            <div className="filter_container">
+              <Sort sort={sort} setSort={(sort) => setSort(sort)}/>
+            </div>
           </div>
         
       </div>
